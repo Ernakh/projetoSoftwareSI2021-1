@@ -3,6 +3,11 @@
     <body>
         <span>Nome:</span>
         <input id="nome">
+        <input type="text" id="nome"><br>
+
+        <span>Ano Nascimento:</span>
+        <input type="number" id="ano"><br>
+
         <button id="enviar">
 			Enviar
 		</button>
@@ -10,7 +15,9 @@
     <script>
         $('#enviar').click(function(){
             var nome = $('#nome').val();
-            alert("Olá, "+nome+"!");
+            var ano = $('#ano').val();
+            var idade = 2021 - ano;
+            alert("Olá, "+nome+"! Você tem: "+idade+"anos");
         });
     </script>
 </html>
